@@ -9,6 +9,7 @@ class IndexView(TemplateView):
         context = super().get_context_data(**kwargs)
         context["who"] = "World"
         return context
+
 # def index(request):
 #     return render(
 #         request,

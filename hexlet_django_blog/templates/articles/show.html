@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block sidebar %}
+    <ul>
+        <li><a href="/">Главная</a></li>
+        <li><a href="/articles/">Статьи</a></li>
+        <li><a href="{% url 'article_create' %}" class="btn btn-primary mb-3">Создать статью</a></li>
+
+    </ul>
+    {% endblock %}
+
+{% block content %}
+     <h1>{{ article.name }}</h1>
+    <div>{{ article.body }}</div>
+{% endblock %}
